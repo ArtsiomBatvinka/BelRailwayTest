@@ -1,0 +1,49 @@
+Create automated tests that perform for this site: https://www.rw.by/
+Automate following scenarios:
+1. Opening site from google
+a. Open google.com
+b. Type in the input for search “белорусская железная дорога”
+c. Click on “Google Search” button
+d. From the search results, click link that corresponds to the target URL (https://www.rw.by/)
+e. Check that main page of site was loaded fine
+
+2. Work with main page
+a. Open site
+b. Switch to the English language
+c. Check, that not less than 4 news are displayed into the “News” section:
+
+ 
+
+a. Check, that text “© 2019 Belarusian Railway” is displayed in the bottom of the page
+b. Check, that 5 buttons are present in the top part of the page: “Press Center”, “Timetable”, “Passenger
+Services”, “Freight”, “Corporate”
+1. Work with search
+a. Open site
+b. Type in “Поиск” input 20 random symbols (they should be different for each execution).
+c. Check, that address in browser changed to the https://www.rw.by/search/?s=Y&amp;q=&lt;your text&gt;
+d. Check, that text “К сожалению, на ваш поисковый запрос ничего не найдено.” is displayed on
+a page
+e. Clear entered on step b value from the corresponding input, and enter “Санкт-Петербург”
+instead.
+f. Click “Найти”
+g. Check, that 15 links to the articles are displayed on a screen
+h. Write into the console text from that links
+
+2. Work with calendar
+
+a. Open site
+b. Type in “Откуда” and “Куда” some valid locations’ names
+c. Click on calendar button, and select date == 5 days from today.
+
+i. Date should be selected even in case it is last day of the month – e.g. in case you are running your test on 29 th of
+September, it should select 4 th of October, etc.
+a. Click on “Найти”
+b. Write to the console departure time and trains name, use format:
+
+i. “ Минск-Пассажирский — Брест-Центральный ” – 19:25
+ii. “Витебск-Пассажирский — Брест-Центральный” – 23:06
+
+a. Click on the first link
+b. Check that name of train is displayed on a page.
+c. Check that text under the text “Дни курсирования” is not empty
+d. Return to the main page of site by clicking on the site’s logo
